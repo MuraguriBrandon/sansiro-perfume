@@ -1,17 +1,54 @@
 # Sansiro WebApp
 
-A sleek, lightweight e-commerce platform designed for Sansiro Kenya, a perfume retail business. The web application allows clients to effortlessly browse the perfume catalog and initiate purchases without the friction of a traditional login process.
+A sleek, lightweight e-commerce platform designed for Sansiro Kenya, a perfume retail business.
 
-🚀 Key Features
-- Frictionless Browsing: Clients can instantly view available perfumes, collections, and pricing without needing to create an account or sign in.
+## Coming Soon Page
 
-- Dynamic Inventory: Real-time stock and product updates powered by a flexible backend.
+This is the introductory landing page for SANSIRO Perfume. It displays a minimalist "Coming Soon" message with brand imagery.
 
-- Instant WhatsApp Checkout: Seamless integration that allows clients to send their cart or product inquiries directly to the sales team via WhatsApp for quick order fulfillment.
+### Tech Stack
 
-🛠️ Tech Stack
-- Frontend: React / Next.js (App Router) for a fast, SEO-friendly, and responsive user interface.
+- **Frontend:** React / Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **Hosting:** Cloudflare Pages (static export)
 
-- Backend & Database: Supabase for real-time data streaming, product management, and media storage for perfume imagery.
+### Local Development
 
-- Communication: WhatsApp Business API / Click-to-Chat for direct, conversational sales closure.
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build
+
+```bash
+npm run build
+```
+
+The static site is exported to the `out/` directory.
+
+### Deploy to Cloudflare Pages
+
+1. Push this repository to GitHub (or GitLab / Bitbucket).
+2. In the [Cloudflare dashboard](https://dash.cloudflare.com), go to **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
+3. Select this repository and configure:
+   - **Framework preset:** Next.js (Static HTML Export)
+   - **Build command:** `npm run build`
+   - **Build output directory:** `out`
+   - **Node.js version:** 22 (or set via `.node-version`)
+4. Deploy.
+
+Alternatively, deploy manually with Wrangler:
+
+```bash
+npm run build
+npx wrangler pages deploy out --project-name=sansiro-webapp
+```
+
+## Roadmap
+
+- Frictionless browsing of the perfume catalog
+- Dynamic inventory powered by Supabase
+- WhatsApp checkout integration
