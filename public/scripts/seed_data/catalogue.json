@@ -1,863 +1,803 @@
 [
-    {
-      "item_code": "E141",
-      "code_name": "ALLURE HOMME SPORT",
-      "designer": "CHANEL",
-      "scent_group": "FRESH-CHYPRE",
-      "notes": [
-        "citrus",
-        "aromatic",
-        "aldehydic",
-        "vanilla",
-        "marine",
-        "sweet",
-        "fresh spicy",
-        "fresh",
-        "amber",
-        "powdery"
-      ],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "E32",
-      "code_name": "INTENSE ULTRA MARINE",
-      "designer": "GIVENCI",
-      "scent_group": "FRESH-CHYPRE",
-      "notes": [
-        "aromatic",
-        "floral",
-        "green",
-        "fruity",
-        "woody",
-        "ozonic",
-        "aquatic",
-        "warm spicy",
-        "iris",
-        "citrus"
-      ],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "E500",
-      "code_name": "ONE MILLION",
-      "designer": "PACO RABANNE",
-      "scent_group": "WOODY",
-      "notes": [
-        "white floral",
-        "tuberose",
-        "amber",
-        "animalic",
-        "woody",
-        "salty",
-        "leather",
-        "tropical",
-        "musky",
-        "coconut"
-      ],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "E530",
-      "code_name": "SAUVAGE",
-      "designer": "CHRISTIAN DIO",
-      "scent_group": "WOODY",
-      "notes": [
-        "fresh spicy",
-        "amber",
-        "citrus",
-        "aromatic",
-        "musky",
-        "woody",
-        "herbal",
-        "warm spicy",
-        "lavender"
-      ],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "E61",
-      "code_name": "POLO BLUE",
-      "designer": "RALPH LAUREN",
-      "scent_group": "FRESH-CHYPRE",
-      "notes": [],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "E69",
-      "code_name": "DESIRE BLUE",
-      "designer": "DUNHIL",
-      "scent_group": "FRESH-CHYPRE",
-      "notes": [],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "E72",
-      "code_name": "RED",
-      "designer": "LACOSTE",
-      "scent_group": "FRESH-CHYPRE",
-      "notes": [
-        "woody",
-        "fruity",
-        "green",
-        "aromatic",
-        "patchouli",
-        "fresh",
-        "earthy",
-        "balsamic",
-        "conifer",
-        "warm spicy"
-      ],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "E77",
-      "code_name": "FUEL FOR LIFE",
-      "designer": "DIESEL",
-      "scent_group": "FRESH-CHYPRE",
-      "notes": [
-        "anis",
-        "soft spicy",
-        "fresh",
-        "lavendar",
-        "aromatic",
-        "powdery",
-        "floral",
-        "ozonic",
-        "citrus",
-        "vanilla"
-      ],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K1",
-      "code_name": "BURBERRY",
-      "designer": "BURBERRY",
-      "scent_group": "FLORAL",
-      "notes": [],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K112",
-      "code_name": "LACOSTE POUR FEMME",
-      "designer": "LACOSTE",
-      "scent_group": "FLORAL",
-      "notes": [
-        "floral",
-        "powdery",
-        "woody",
-        "fresh spicy",
-        "warm spicy",
-        "leather",
-        "musky",
-        "violet",
-        "amber",
-        "vanilla"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K118",
-      "code_name": "HYPNOSE",
-      "designer": "LANCOME",
-      "scent_group": "ORIENTAL",
-      "notes": [
-        "aromatic",
-        "warm spicy",
-        "lavendar",
-        "amber",
-        "fresh spicy",
-        "citrus",
-        "green",
-        "patchouli",
-        "musky",
-        "powdery"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K12",
-      "code_name": "WEEKEND",
-      "designer": "BURBERRY",
-      "scent_group": "FLORAL",
-      "notes": [],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K122",
-      "code_name": "BRIGHT CRYSTAL",
-      "designer": "VERSACE",
-      "scent_group": "FLORAL",
-      "notes": [
-        "floral",
-        "fresh",
-        "aquatic",
-        "citrus",
-        "woody",
-        "fresh spicy",
-        "rose"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K238",
-      "code_name": "BLACK OPIUM",
-      "designer": "YVES SAINT LAURENT",
-      "scent_group": "ORIENTAL",
-      "notes": [
-        "vanilla",
-        "coffee",
-        "warm spicy",
-        "soft spicy",
-        "white floral",
-        "fruity",
-        "woody",
-        "powdery",
-        "balsamic"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K242",
-      "code_name": "OLYMPEA",
-      "designer": "PACO RABANNE",
-      "scent_group": "ORIENTAL",
-      "notes": [
-        "vanilla",
-        "salty",
-        "white floral",
-        "wood",
-        "amber",
-        "warm spicy",
-        "citrus",
-        "powdery",
-        "marine",
-        "balsamic"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K251",
-      "code_name": "GOOD GIRL",
-      "designer": "CAROLINE HERRERA",
-      "scent_group": "FLORAL",
-      "notes": [],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K252",
-      "code_name": "GABRIEL",
-      "designer": "CHANEL",
-      "scent_group": "FLORAL",
-      "notes": [
-        "white floral",
-        "citrus",
-        "woody",
-        "sweet",
-        "fruity",
-        "musky",
-        "yellow floral",
-        "powdery",
-        "tuberose",
-        "animalic"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K261",
-      "code_name": "SCANDAL",
-      "designer": "JEAN PAUL",
-      "scent_group": "",
-      "notes": [],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K268",
-      "code_name": "DELINA",
-      "designer": "PARFUMS DE MARLY",
-      "scent_group": "FLORAL",
-      "notes": [
-        "rose",
-        "floral",
-        "fruity",
-        "fresh",
-        "musky",
-        "green",
-        "aromatic",
-        "tropical",
-        "powdery",
-        "woody"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K575",
-      "code_name": "ROBERTO CAVALLI",
-      "designer": "ROBERTO CAVALLI",
-      "scent_group": "ORIENTAL",
-      "notes": [
-        "vanilla",
-        "amber",
-        "white floral",
-        "sweet",
-        "warm spicy",
-        "citrus",
-        "soft spicy",
-        "balsamic"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K60",
-      "code_name": "ULTRAVIOLET",
-      "designer": "PACO RABANNE",
-      "scent_group": "ORIENTAL",
-      "notes": [
-        "violet",
-        "powdery",
-        "warm spicy",
-        "floral",
-        "fruity",
-        "fresh spicy",
-        "woody",
-        "fresh",
-        "aromatic",
-        "vanilla"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K64",
-      "code_name": "HYPNOTIC POISON",
-      "designer": "CHRISTIAN DIOR",
-      "scent_group": "ORIENTAL",
-      "notes": [
-        "vanilla",
-        "almond",
-        "fruity",
-        "nutty",
-        "powdery",
-        "woody",
-        "coconut",
-        "white floral",
-        "balsamic"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K67",
-      "code_name": "ESCADA",
-      "designer": "ESCADA",
-      "scent_group": "",
-      "notes": [],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K79",
-      "code_name": "CHANCE",
-      "designer": "CHANEL",
-      "scent_group": "FLORAL",
-      "notes": [
-        "musky",
-        "patchouli",
-        "powdery",
-        "white floral",
-        "soft spicy",
-        "woody",
-        "earthy",
-        "vanilla",
-        "warm spicy",
-        "iris"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K8",
-      "code_name": "COOL WATER",
-      "designer": "DAVIDOFF",
-      "scent_group": "FRESH-CHYPRE",
-      "notes": [
-        "aromatic",
-        "marine",
-        "aquatic",
-        "fruity",
-        "green",
-        "ozonic",
-        "sweet",
-        "fresh",
-        "floral",
-        "salty"
-      ],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K88",
-      "code_name": "BOSS INTENSE",
-      "designer": "HUGO BOSS",
-      "scent_group": "ORIENTAL",
-      "notes": [],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K90",
-      "code_name": "AMOR AMOR",
-      "designer": "CACHAREL",
-      "scent_group": "",
-      "notes": [],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "K95",
-      "code_name": "COCO MADEMOISELLE",
-      "designer": "CHANEL",
-      "scent_group": "",
-      "notes": [],
-      "gender": "Ladies",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "M656",
-      "code_name": "INVICTUS",
-      "designer": "PACO RABANNE",
-      "scent_group": "",
-      "notes": [],
-      "gender": "Men",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    },
-    {
-      "item_code": "U19",
-      "code_name": "BLACK ORCHID",
-      "designer": "TOM FORD",
-      "scent_group": "ORIENTAL",
-      "notes": [
-        "warm spicy",
-        "earthy",
-        "woody",
-        "sweet",
-        "amber",
-        "patchouli",
-        "chocolate",
-        "floral",
-        "fruity",
-        "balsamic"
-      ],
-      "gender": "Unisex",
-      "variants": [
-        {
-          "size_ml": 8,
-          "price": 350,
-          "quantity": 10,
-          "low_stock_threshold": 3
-        },
-        {
-          "size_ml": 50,
-          "price": 2000,
-          "quantity": 0,
-          "low_stock_threshold": 3
-        }
-      ]
-    }
-  ]
+  {
+    "item_code": "E141",
+    "code_name": "ALLURE HOMME SPORT",
+    "designer": "CHANEL",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [
+      "citrus",
+      "aromatic",
+      "aldehydic",
+      "vanilla",
+      "marine",
+      "sweet",
+      "fresh spicy",
+      "fresh",
+      "amber",
+      "powdery"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E32",
+    "code_name": "INTENSE ULTRA MARINE",
+    "designer": "GIVENCI",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [
+      "aromatic",
+      "floral",
+      "green",
+      "fruity",
+      "woody",
+      "ozonic",
+      "aquatic",
+      "warm spicy",
+      "iris",
+      "citrus"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E500",
+    "code_name": "ONE MILLION",
+    "designer": "PACO RABANNE",
+    "scent_group": "WOODY",
+    "notes": [
+      "white floral",
+      "tuberose",
+      "amber",
+      "animalic",
+      "woody",
+      "salty",
+      "leather",
+      "tropical",
+      "musky",
+      "coconut"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E530",
+    "code_name": "SAUVAGE",
+    "designer": "CHRISTIAN DIO",
+    "scent_group": "WOODY",
+    "notes": [
+      "fresh spicy",
+      "amber",
+      "citrus",
+      "aromatic",
+      "musky",
+      "woody",
+      "herbal",
+      "warm spicy",
+      "lavender"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E61",
+    "code_name": "POLO BLUE",
+    "designer": "RALPH LAUREN",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E69",
+    "code_name": "DESIRE BLUE",
+    "designer": "DUNHIL",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E72",
+    "code_name": "RED",
+    "designer": "LACOSTE",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [
+      "woody",
+      "fruity",
+      "green",
+      "aromatic",
+      "patchouli",
+      "fresh",
+      "earthy",
+      "balsamic",
+      "conifer",
+      "warm spicy"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E77",
+    "code_name": "FUEL FOR LIFE",
+    "designer": "DIESEL",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [
+      "anis",
+      "soft spicy",
+      "fresh",
+      "lavendar",
+      "aromatic",
+      "powdery",
+      "floral",
+      "ozonic",
+      "citrus",
+      "vanilla"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K1",
+    "code_name": "BURBERRY",
+    "designer": "BURBERRY",
+    "scent_group": "FLORAL",
+    "notes": [],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K112",
+    "code_name": "LACOSTE POUR FEMME",
+    "designer": "LACOSTE",
+    "scent_group": "FLORAL",
+    "notes": [
+      "floral",
+      "powdery",
+      "woody",
+      "fresh spicy",
+      "warm spicy",
+      "leather",
+      "musky",
+      "violet",
+      "amber",
+      "vanilla"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K118",
+    "code_name": "HYPNOSE",
+    "designer": "LANCOME",
+    "scent_group": "ORIENTAL",
+    "notes": [
+      "aromatic",
+      "warm spicy",
+      "lavendar",
+      "amber",
+      "fresh spicy",
+      "citrus",
+      "green",
+      "patchouli",
+      "musky",
+      "powdery"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K12",
+    "code_name": "WEEKEND",
+    "designer": "BURBERRY",
+    "scent_group": "FLORAL",
+    "notes": [],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K122",
+    "code_name": "BRIGHT CRYSTAL",
+    "designer": "VERSACE",
+    "scent_group": "FLORAL",
+    "notes": [
+      "floral",
+      "fresh",
+      "aquatic",
+      "citrus",
+      "woody",
+      "fresh spicy",
+      "rose"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K238",
+    "code_name": "BLACK OPIUM",
+    "designer": "YVES SAINT LAURENT",
+    "scent_group": "ORIENTAL",
+    "notes": [
+      "vanilla",
+      "coffee",
+      "warm spicy",
+      "soft spicy",
+      "white floral",
+      "fruity",
+      "woody",
+      "powdery",
+      "balsamic"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K242",
+    "code_name": "OLYMPEA",
+    "designer": "PACO RABANNE",
+    "scent_group": "ORIENTAL",
+    "notes": [
+      "vanilla",
+      "salty",
+      "white floral",
+      "wood",
+      "amber",
+      "warm spicy",
+      "citrus",
+      "powdery",
+      "marine",
+      "balsamic"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K251",
+    "code_name": "GOOD GIRL",
+    "designer": "CAROLINE HERRERA",
+    "scent_group": "FLORAL",
+    "notes": [],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K252",
+    "code_name": "GABRIEL",
+    "designer": "CHANEL",
+    "scent_group": "FLORAL",
+    "notes": [
+      "white floral",
+      "citrus",
+      "woody",
+      "sweet",
+      "fruity",
+      "musky",
+      "yellow floral",
+      "powdery",
+      "tuberose",
+      "animalic"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K261",
+    "code_name": "SCANDAL",
+    "designer": "JEAN PAUL",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K268",
+    "code_name": "DELINA",
+    "designer": "PARFUMS DE MARLY",
+    "scent_group": "FLORAL",
+    "notes": [
+      "rose",
+      "floral",
+      "fruity",
+      "fresh",
+      "musky",
+      "green",
+      "aromatic",
+      "tropical",
+      "powdery",
+      "woody"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K575",
+    "code_name": "ROBERTO CAVALLI",
+    "designer": "ROBERTO CAVALLI",
+    "scent_group": "ORIENTAL",
+    "notes": [
+      "vanilla",
+      "amber",
+      "white floral",
+      "sweet",
+      "warm spicy",
+      "citrus",
+      "soft spicy",
+      "balsamic"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K60",
+    "code_name": "ULTRAVIOLET",
+    "designer": "PACO RABANNE",
+    "scent_group": "ORIENTAL",
+    "notes": [
+      "violet",
+      "powdery",
+      "warm spicy",
+      "floral",
+      "fruity",
+      "fresh spicy",
+      "woody",
+      "fresh",
+      "aromatic",
+      "vanilla"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K64",
+    "code_name": "HYPNOTIC POISON",
+    "designer": "CHRISTIAN DIOR",
+    "scent_group": "ORIENTAL",
+    "notes": [
+      "vanilla",
+      "almond",
+      "fruity",
+      "nutty",
+      "powdery",
+      "woody",
+      "coconut",
+      "white floral",
+      "balsamic"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K67",
+    "code_name": "ESCADA",
+    "designer": "ESCADA",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K79",
+    "code_name": "CHANCE",
+    "designer": "CHANEL",
+    "scent_group": "FLORAL",
+    "notes": [
+      "musky",
+      "patchouli",
+      "powdery",
+      "white floral",
+      "soft spicy",
+      "woody",
+      "earthy",
+      "vanilla",
+      "warm spicy",
+      "iris"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K8",
+    "code_name": "COOL WATER",
+    "designer": "DAVIDOFF",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [
+      "aromatic",
+      "marine",
+      "aquatic",
+      "fruity",
+      "green",
+      "ozonic",
+      "sweet",
+      "fresh",
+      "floral",
+      "salty"
+    ],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K88",
+    "code_name": "BOSS INTENSE",
+    "designer": "HUGO BOSS",
+    "scent_group": "ORIENTAL",
+    "notes": [],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K90",
+    "code_name": "AMOR AMOR",
+    "designer": "CACHAREL",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "K95",
+    "code_name": "COCO MADEMOISELLE",
+    "designer": "CHANEL",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Ladies",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "M656",
+    "code_name": "INVICTUS",
+    "designer": "PACO RABANNE",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "U19",
+    "code_name": "BLACK ORCHID",
+    "designer": "TOM FORD",
+    "scent_group": "ORIENTAL",
+    "notes": [
+      "warm spicy",
+      "earthy",
+      "woody",
+      "sweet",
+      "amber",
+      "patchouli",
+      "chocolate",
+      "floral",
+      "fruity",
+      "balsamic"
+    ],
+    "gender": "Unisex",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": false
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  }
+]
