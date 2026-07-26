@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
-const inter = Inter({
+const display = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600"],
+  variable: "--font-display",
+});
+
+const body = Manrope({
+  subsets: ["latin"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
-  title: "SANSIRO Perfume — Coming Soon",
+  title: "SANSIRO Perfume",
   description:
-    "SANSIRO Perfume — premium fragrances for men and women. Something beautiful is on the way.",
+    "SANSIRO Perfume — premium inspired fragrances for men and women.",
   openGraph: {
-    title: "SANSIRO Perfume — Coming Soon",
-    description: "Premium fragrances for men and women. Coming soon.",
+    title: "SANSIRO Perfume",
+    description: "Premium inspired fragrances for men and women.",
     type: "website",
   },
 };
@@ -24,9 +31,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
-        {children}
+    <html lang="en" data-theme="dark" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('sansiro-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t;}}catch(e){}})();`,
+          }}
+        />
+      </head>
+      <body
+        className={`${display.variable} ${body.variable} font-sans antialiased`}
+      >
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
