@@ -13,7 +13,7 @@ export default function ComingSoonPage() {
       <div className="relative z-10 flex flex-col items-center text-center">
         <Image
           src="/images/logo.png"
-          alt="SANSIRO Perfume"
+          alt="Sansiro Perfume"
           width={280}
           height={200}
           priority
@@ -23,14 +23,14 @@ export default function ComingSoonPage() {
         <div className="mb-16 flex items-end justify-center gap-8 sm:gap-16">
           <Image
             src="/images/8ml-women.png"
-            alt="SANSIRO for Women"
+            alt="Sansiro for Women"
             width={80}
             height={320}
             className="h-32 w-auto opacity-80 sm:h-44"
           />
           <Image
             src="/images/8ml-men.png"
-            alt="SANSIRO for Men"
+            alt="Sansiro for Men"
             width={80}
             height={320}
             className="h-32 w-auto opacity-80 sm:h-44"

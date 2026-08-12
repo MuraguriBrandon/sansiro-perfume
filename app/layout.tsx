@@ -15,11 +15,11 @@ const body = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "SANSIRO Perfume",
+  title: "Sansiro Perfume",
   description:
-    "SANSIRO Perfume — premium inspired fragrances for men and women.",
+    "Sansiro Perfume — premium inspired fragrances for men and women.",
   openGraph: {
-    title: "SANSIRO Perfume",
+    title: "Sansiro Perfume",
     description: "Premium inspired fragrances for men and women.",
     type: "website",
   },

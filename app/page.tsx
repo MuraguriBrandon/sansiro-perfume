@@ -18,7 +18,7 @@ export default function Home() {
         <ProductGrid products={products} />
       </main>
       <footer className="border-t border-[var(--border)] py-10 text-center text-xs uppercase tracking-[0.3em] text-[var(--fg-subtle)]">
-        SANSIRO Perfume
+        Sansiro Perfume
       </footer>
     </div>
   );

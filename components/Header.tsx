@@ -10,10 +10,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-18 sm:px-8">
-        <Link href="/" className="flex items-center gap-3" aria-label="SANSIRO home">
+        <Link href="/" className="flex items-center gap-3" aria-label="Sansiro home">
           <Image
             src="/images/logo.png"
-            alt="SANSIRO"
+            alt="Sansiro"
             width={120}
             height={48}
             priority
