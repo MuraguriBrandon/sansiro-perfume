@@ -4,7 +4,7 @@ A sleek, lightweight e-commerce platform designed for Sansiro Kenya, a perfume r
 
 ## Coming Soon Page
 
-This is the introductory landing page for SANSIRO Perfume. It displays a minimalist "Coming Soon" message with brand imagery.
+This is the introductory landing page for Sansiro Perfume. It displays a minimalist "Coming Soon" message with brand imagery.
 
 ### Tech Stack
 
