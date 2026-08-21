@@ -21,7 +21,12 @@
 .modal-visual > .code { z-index: 1; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.7); }
 .size-options { margin: 25px 0 16px; }.size-options > span { display: block; margin-bottom: 9px; color: #777970; font-size: 10px; text-transform: uppercase; letter-spacing: .12em; }.size-options > div { display: flex; gap: 7px; }.size-options button { border: 1px solid #c9c4b9; background: transparent; color: var(--ink); padding: 9px 10px; font-size: 10px; }.size-options button.selected { border-color: var(--ink); background: var(--ink); color: var(--cream); }
 .size-switch { display: flex; align-items: center; gap: 4px; padding: 4px; border: 1px solid #c9c7bd; background: #ebe8df; }.size-switch > span { padding: 0 7px; color: #777970; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }.size-switch button { border: 0; background: transparent; color: #6c6a62; padding: 8px 10px; font-size: 11px; }.size-switch button.active { background: var(--ink); color: var(--cream); }.size-switch small { opacity: .7; font-size: 9px; }
-.hero-art > img { position: absolute; inset: -8% -5%; width: 110%; height: 116%; object-fit: cover; object-position: center; border-radius: 0; filter: saturate(.95) contrast(1.02); -webkit-mask-image: radial-gradient(ellipse at center, #000 48%, rgba(0,0,0,.92) 66%, transparent 92%); mask-image: radial-gradient(ellipse at center, #000 48%, rgba(0,0,0,.92) 66%, transparent 92%); }
+.hero-art > img { display: none; }
+.hero-photo { position: absolute; top: 2%; bottom: 1%; width: 46%; overflow: hidden; border-radius: 48% 48% 42% 42%; filter: saturate(.92) contrast(1.03); -webkit-mask-image: radial-gradient(ellipse at center, #000 48%, rgba(0,0,0,.88) 70%, transparent 96%); mask-image: radial-gradient(ellipse at center, #000 48%, rgba(0,0,0,.88) 70%, transparent 96%); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.hero-photo-men { left: 3%; transform: rotate(-7deg); }
+.hero-photo-women { right: 2%; transform: rotate(7deg); }
+.hero-photo-men::after, .hero-photo-women::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,14,9,.05), rgba(28,14,9,.18)); pointer-events: none; }
 .hero-art .art-note { z-index: 1; }
 /* Editorial ambience: warm espresso, parchment and restrained brass. */
 :root { --ink: #1c0e09; --cream: #f2e7d5; --gold: #c89255; --muted: #a89581; --coral: #9c6048; }
