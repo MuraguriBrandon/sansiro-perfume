@@ -22,6 +22,7 @@ export type Product = {
 
 export type CatalogProduct = Product & {
   image_8ml: string;
+  image_15ml: string;
   image_50ml: string;
   has_dedicated_50ml: boolean;
 };
@@ -52,6 +53,11 @@ export function get8mlImage(gender: Gender): string {
   return findImageIgnoreCase("8ml-men.png") ?? "/images/8ml-men.png";
 }
 
+export function get15mlImage(gender: Gender): string {
+  const filename = gender === "Ladies" ? "15ml-female.png" : "15ml-male.png";
+  return findImageIgnoreCase(filename) ?? `/images/${filename}`;
+}
+
 export function get50mlImage(itemCode: string): {
   src: string;
   dedicated: boolean;
@@ -77,7 +83,12 @@ export function getCatalogue(): CatalogProduct[] {
     const image50 = get50mlImage(product.item_code);
     return {
       ...product,
+      variants: [
+        ...product.variants,
+        { size_ml: 15, price: 500, available: true },
+      ],
       image_8ml: get8mlImage(product.gender),
+      image_15ml: get15mlImage(product.gender),
       image_50ml: image50.src,
       has_dedicated_50ml: image50.dedicated,
     };
@@ -108,8 +119,9 @@ export type PreviewKind = "8ml-men" | "8ml-women" | "50ml-generic";
 export type PreviewProduct = CatalogProduct & {
   preview: PreviewKind;
   display_image: string;
-  display_size_ml: 8 | 50;
+  display_size_ml: 8 | 15 | 50;
 };
+
 
 /** One row for the homepage: 8ml men, 8ml women, generic 50ml. */
 export function getHomePreviewProducts(): PreviewProduct[] {
@@ -119,7 +131,7 @@ export function getHomePreviewProducts(): PreviewProduct[] {
   const take = (
     predicate: (product: CatalogProduct) => boolean,
     preview: PreviewKind,
-    display_size_ml: 8 | 50,
+    display_size_ml: 8 | 15 | 50,
   ): PreviewProduct | null => {
     const product = products.find(
       (item) => !used.has(item.item_code) && predicate(item),
