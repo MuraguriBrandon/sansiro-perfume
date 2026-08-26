@@ -1,97 +1,5 @@
 [
-  {
-    "item_code": "E141",
-    "code_name": "ALLURE HOMME SPORT",
-    "designer": "CHANEL",
-    "scent_group": "FRESH-CHYPRE",
-    "notes": [
-      "citrus",
-      "aromatic",
-      "aldehydic",
-      "vanilla",
-      "marine",
-      "sweet",
-      "fresh spicy",
-      "fresh",
-      "amber",
-      "powdery"
-    ],
-    "gender": "Men",
-    "variants": [
-      {
-        "size_ml": 8,
-        "price": 350,
-        "available": true
-      },
-      {
-        "size_ml": 50,
-        "price": 2000,
-        "available": false
-      }
-    ]
-  },
-  {
-    "item_code": "E32",
-    "code_name": "INTENSE ULTRA MARINE",
-    "designer": "GIVENCI",
-    "scent_group": "FRESH-CHYPRE",
-    "notes": [
-      "aromatic",
-      "floral",
-      "green",
-      "fruity",
-      "woody",
-      "ozonic",
-      "aquatic",
-      "warm spicy",
-      "iris",
-      "citrus"
-    ],
-    "gender": "Men",
-    "variants": [
-      {
-        "size_ml": 8,
-        "price": 350,
-        "available": true
-      },
-      {
-        "size_ml": 50,
-        "price": 2000,
-        "available": false
-      }
-    ]
-  },
-  {
-    "item_code": "E500",
-    "code_name": "ONE MILLION",
-    "designer": "PACO RABANNE",
-    "scent_group": "WOODY",
-    "notes": [
-      "white floral",
-      "tuberose",
-      "amber",
-      "animalic",
-      "woody",
-      "salty",
-      "leather",
-      "tropical",
-      "musky",
-      "coconut"
-    ],
-    "gender": "Men",
-    "variants": [
-      {
-        "size_ml": 8,
-        "price": 350,
-        "available": true
-      },
-      {
-        "size_ml": 50,
-        "price": 2000,
-        "available": false
-      }
-    ]
-  },
+  
   {
     "item_code": "E530",
     "code_name": "SAUVAGE",
@@ -209,6 +117,98 @@
       "ozonic",
       "citrus",
       "vanilla"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },{
+    "item_code": "E141",
+    "code_name": "ALLURE HOMME SPORT",
+    "designer": "CHANEL",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [
+      "citrus",
+      "aromatic",
+      "aldehydic",
+      "vanilla",
+      "marine",
+      "sweet",
+      "fresh spicy",
+      "fresh",
+      "amber",
+      "powdery"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E32",
+    "code_name": "INTENSE ULTRA MARINE",
+    "designer": "GIVENCI",
+    "scent_group": "FRESH-CHYPRE",
+    "notes": [
+      "aromatic",
+      "floral",
+      "green",
+      "fruity",
+      "woody",
+      "ozonic",
+      "aquatic",
+      "warm spicy",
+      "iris",
+      "citrus"
+    ],
+    "gender": "Men",
+    "variants": [
+      {
+        "size_ml": 8,
+        "price": 350,
+        "available": true
+      },
+      {
+        "size_ml": 50,
+        "price": 2000,
+        "available": false
+      }
+    ]
+  },
+  {
+    "item_code": "E500",
+    "code_name": "ONE MILLION",
+    "designer": "PACO RABANNE",
+    "scent_group": "WOODY",
+    "notes": [
+      "white floral",
+      "tuberose",
+      "amber",
+      "animalic",
+      "woody",
+      "salty",
+      "leather",
+      "tropical",
+      "musky",
+      "coconut"
     ],
     "gender": "Men",
     "variants": [
@@ -798,6 +798,66 @@
         "price": 2000,
         "available": false
       }
+    ]
+  },
+  {
+    "item_code": "E13",
+    "code_name": "HUGO",
+    "designer": "HUGO BOSS",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Men",
+    "variants": [
+      { "size_ml": 8, "price": 350, "available": true },
+      { "size_ml": 50, "price": 2000, "available": false }
+    ]
+  },
+  {
+    "item_code": "E15",
+    "code_name": "BURBERRY",
+    "designer": "BURBERRY",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Men",
+    "variants": [
+      { "size_ml": 8, "price": 350, "available": true },
+      { "size_ml": 50, "price": 2000, "available": false }
+    ]
+  },
+  {
+    "item_code": "E28",
+    "code_name": "ROCHAS",
+    "designer": "ROCHAS",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Men",
+    "variants": [
+      { "size_ml": 8, "price": 350, "available": true },
+      { "size_ml": 50, "price": 2000, "available": false }
+    ]
+  },
+  {
+    "item_code": "E14",
+    "code_name": "ACQUA DI GIO",
+    "designer": "GIORGIO ARMANI",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Men",
+    "variants": [
+      { "size_ml": 8, "price": 350, "available": true },
+      { "size_ml": 50, "price": 2000, "available": false }
+    ]
+  },
+  {
+    "item_code": "E70",
+    "code_name": "BLACK CODE",
+    "designer": "GIORGIO ARMANI",
+    "scent_group": "",
+    "notes": [],
+    "gender": "Men",
+    "variants": [
+      { "size_ml": 8, "price": 350, "available": true },
+      { "size_ml": 50, "price": 2000, "available": false }
     ]
   }
 ]
