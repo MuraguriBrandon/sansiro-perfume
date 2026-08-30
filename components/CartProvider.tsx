@@ -7,7 +7,7 @@ import {
   useMemo,
   useState,
 } from "react";
-import type { PreviewProduct } from "@/lib/catalogue";
+import type { PreviewProduct } from "@/lib/catalogue-shared";
 import { formatPrice } from "@/lib/format";
 
 export type CartItem = {

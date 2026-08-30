@@ -7,7 +7,7 @@ import { useTheme } from "./ThemeProvider";
 
 const navItems = [
   { label: "About us", href: "#" },
-  { label: "Shop", href: "#" },
+  { label: "Shop", href: "/shop" },
   { label: "Contact us", href: "#" },
 ] as const;
 

@@ -1,31 +1,29 @@
+import "server-only";
+
 import fs from "fs";
 import path from "path";
 import catalogueData from "@/public/scripts/seed_data/catalogue.json";
+import {
+  asPreviewProduct,
+  type CatalogProduct,
+  type Gender,
+  type Product,
+  type PreviewProduct,
+} from "@/lib/catalogue-shared";
 
-export type Gender = "Men" | "Ladies" | "Unisex";
+export type {
+  CatalogProduct,
+  Gender,
+  PreviewKind,
+  PreviewProduct,
+  Product,
+  ProductVariant,
+} from "@/lib/catalogue-shared";
 
-export type ProductVariant = {
-  size_ml: number;
-  price: number;
-  available: boolean;
-};
-
-export type Product = {
-  item_code: string;
-  code_name: string;
-  designer: string;
-  scent_group: string;
-  notes: string[];
-  gender: Gender;
-  variants: ProductVariant[];
-};
-
-export type CatalogProduct = Product & {
-  image_8ml: string;
-  image_15ml: string;
-  image_50ml: string;
-  has_dedicated_50ml: boolean;
-};
+export {
+  asPreviewProduct,
+  getProductImage,
+} from "@/lib/catalogue-shared";
 
 const IMAGE_DIR = path.join(process.cwd(), "public", "images");
 
@@ -74,10 +72,6 @@ export function get50mlImage(itemCode: string): {
   };
 }
 
-export function formatPrice(price: number): string {
-  return `KSh ${price.toLocaleString("en-KE")}`;
-}
-
 export function getCatalogue(): CatalogProduct[] {
   return (catalogueData as Product[]).map((product) => {
     const image50 = get50mlImage(product.item_code);
@@ -114,42 +108,36 @@ export function getFeaturedProducts(limit = 4): CatalogProduct[] {
     .slice(0, limit);
 }
 
-export type PreviewKind = "8ml-men" | "8ml-women" | "50ml-generic";
+/** Look up a catalogue product by item_code (case-insensitive). */
+export function getProductByCode(itemCode: string): CatalogProduct | null {
+  const needle = itemCode.trim().toLowerCase();
+  return (
+    getCatalogue().find(
+      (product) => product.item_code.toLowerCase() === needle,
+    ) ?? null
+  );
+}
 
-export type PreviewProduct = CatalogProduct & {
-  preview: PreviewKind;
-  display_image: string;
-  display_size_ml: 8 | 15 | 50;
-};
-
-
-/** One row for the homepage: 8ml men, 8ml women, generic 50ml. */
-export function getHomePreviewProducts(): PreviewProduct[] {
+/** Homepage preview: up to 5 products per size. */
+export function getHomeSizeSections(limit = 5): {
+  size_ml: 8 | 15 | 50;
+  products: PreviewProduct[];
+}[] {
   const products = getCatalogue();
-  const used = new Set<string>();
+  const sizes: Array<8 | 15 | 50> = [8, 15, 50];
 
-  const take = (
-    predicate: (product: CatalogProduct) => boolean,
-    preview: PreviewKind,
-    display_size_ml: 8 | 15 | 50,
-  ): PreviewProduct | null => {
-    const product = products.find(
-      (item) => !used.has(item.item_code) && predicate(item),
-    );
-    if (!product) return null;
-    used.add(product.item_code);
-    return {
-      ...product,
-      preview,
-      display_size_ml,
-      display_image:
-        display_size_ml === 8 ? product.image_8ml : product.image_50ml,
-    };
-  };
+  return sizes.map((size_ml) => ({
+    size_ml,
+    products: products
+      .filter((product) =>
+        product.variants.some((variant) => variant.size_ml === size_ml),
+      )
+      .slice(0, limit)
+      .map((product) => asPreviewProduct(product, size_ml)),
+  }));
+}
 
-  return [
-    take((p) => p.gender === "Men", "8ml-men", 8),
-    take((p) => p.gender === "Ladies", "8ml-women", 8),
-    take((p) => !p.has_dedicated_50ml, "50ml-generic", 50),
-  ].filter((item): item is PreviewProduct => item !== null);
+/** @deprecated Prefer getHomeSizeSections */
+export function getHomePreviewProducts(): PreviewProduct[] {
+  return getHomeSizeSections(1).flatMap((section) => section.products);
 }

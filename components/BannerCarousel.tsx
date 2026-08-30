@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import type { CatalogProduct } from "@/lib/catalogue";
+import type { CatalogProduct } from "@/lib/catalogue-shared";
 import { formatPrice } from "@/lib/format";
 
 type BannerCarouselProps = {

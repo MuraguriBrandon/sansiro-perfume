@@ -1,13 +1,10 @@
 import { BannerCarousel } from "@/components/BannerCarousel";
 import { Header } from "@/components/Header";
-import { ProductGrid } from "@/components/ProductGrid";
-import {
-  getFeaturedProducts,
-  getHomePreviewProducts,
-} from "@/lib/catalogue";
+import { HomeProductSections } from "@/components/HomeProductSections";
+import { getFeaturedProducts, getHomeSizeSections } from "@/lib/catalogue";
 
 export default function Home() {
-  const products = getHomePreviewProducts();
+  const sections = getHomeSizeSections(5);
   const featured = getFeaturedProducts(3);
 
   return (
@@ -15,7 +12,7 @@ export default function Home() {
       <Header />
       <main>
         <BannerCarousel products={featured} />
-        <ProductGrid products={products} />
+        <HomeProductSections sections={sections} />
       </main>
       <footer className="border-t border-[var(--border)] py-10 text-center text-xs uppercase tracking-[0.3em] text-[var(--fg-subtle)]">
         Sansiro Perfume

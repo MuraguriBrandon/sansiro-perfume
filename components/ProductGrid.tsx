@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { CatalogProduct, PreviewProduct } from "@/lib/catalogue";
+import type { CatalogProduct, PreviewProduct } from "@/lib/catalogue-shared";
 import { getSizeGuide, sizeGuide, type CatalogSize } from "@/lib/size-guide";
 import { useCart } from "./CartProvider";
 import { ProductCard } from "./ProductCard";
@@ -28,7 +28,6 @@ export function ProductGrid({ products }: ProductGridProps) {
   const [gender, setGender] = useState("All");
   const [scent, setScent] = useState("All");
   const [size, setSize] = useState<CatalogSize>(15);
-  const [selected, setSelected] = useState<PreviewProduct | null>(null);
 
   useEffect(() => {
     fetch("/api/products")
@@ -184,7 +183,6 @@ export function ProductGrid({ products }: ProductGridProps) {
                     <ProductCard
                       key={`${product.item_code}-${guide.size_ml}`}
                       product={product}
-                      onSelect={setSelected}
                       onAdd={addToCart}
                     />
                   ))}
@@ -194,82 +192,6 @@ export function ProductGrid({ products }: ProductGridProps) {
           })}
         </div>
       )}
-
-      {selected && (
-        <ProductModal
-          product={selected}
-          onClose={() => setSelected(null)}
-          onAdd={addToCart}
-        />
-      )}
     </section>
-  );
-}
-
-function ProductModal({
-  product,
-  onClose,
-  onAdd,
-}: {
-  product: PreviewProduct;
-  onClose: () => void;
-  onAdd: (product: PreviewProduct, size: number) => void;
-}) {
-  return (
-    <div
-      className="fixed inset-0 z-[60] flex items-end justify-center bg-black/70 p-0 sm:items-center sm:p-6"
-      onClick={onClose}
-    >
-      <div
-        className="max-h-[90vh] w-full max-w-2xl overflow-y-auto bg-[var(--bg)] p-6 sm:p-10"
-        onClick={(event) => event.stopPropagation()}
-      >
-        <div className="flex justify-end">
-          <button
-            type="button"
-            onClick={onClose}
-            aria-label="Close product details"
-            className="text-2xl text-[var(--fg-muted)]"
-          >
-            &times;
-          </button>
-        </div>
-        <div className="grid gap-8 sm:grid-cols-[minmax(180px,0.8fr)_1fr]">
-          <img
-            src={product.display_image}
-            alt={product.code_name}
-            className="mx-auto h-64 object-contain"
-          />
-          <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-[var(--fg-subtle)]">
-              {product.designer} · {product.gender}
-            </p>
-            <h2 className="mt-3 font-display text-4xl">{product.code_name}</h2>
-            <p className="mt-4 text-sm leading-7 text-[var(--fg-muted)]">
-              {product.scent_group || "Signature blend"}.{" "}
-              {product.notes.slice(0, 6).join(" · ")}.
-            </p>
-            <div className="mt-8 space-y-3">
-              {product.variants.map((variant) => (
-                <div
-                  key={variant.size_ml}
-                  className="flex items-center justify-between border-t border-[var(--border)] py-3"
-                >
-                  <span>{variant.size_ml}ml</span>
-                  <button
-                    type="button"
-                    disabled={!variant.available}
-                    onClick={() => onAdd(product, variant.size_ml)}
-                    className="border border-[var(--fg)] px-3 py-2 text-xs uppercase tracking-[0.15em] disabled:border-[var(--border)] disabled:text-[var(--fg-subtle)]"
-                  >
-                    {variant.available ? "Add to cart" : "Sold out"}
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }
