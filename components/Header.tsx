@@ -6,9 +6,9 @@ import { useCart } from "./CartProvider";
 import { useTheme } from "./ThemeProvider";
 
 const navItems = [
-  { label: "About us", href: "#" },
+  { label: "About us", href: "/about" },
   { label: "Shop", href: "/shop" },
-  { label: "Contact us", href: "#" },
+  { label: "Contact us", href: "/contact" },
 ] as const;
 
 export function Header() {

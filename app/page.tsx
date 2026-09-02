@@ -1,4 +1,5 @@
 import { BannerCarousel } from "@/components/BannerCarousel";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { HomeProductSections } from "@/components/HomeProductSections";
 import { getFeaturedProducts, getHomeSizeSections } from "@/lib/catalogue";
@@ -14,9 +15,7 @@ export default function Home() {
         <BannerCarousel products={featured} />
         <HomeProductSections sections={sections} />
       </main>
-      <footer className="border-t border-[var(--border)] py-10 text-center text-xs uppercase tracking-[0.3em] text-[var(--fg-subtle)]">
-        Sansiro Perfume
-      </footer>
+      <Footer />
     </div>
   );
 }

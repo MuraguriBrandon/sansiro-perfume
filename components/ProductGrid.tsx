@@ -6,7 +6,7 @@ import { getSizeGuide, sizeGuide, type CatalogSize } from "@/lib/size-guide";
 import { useCart } from "./CartProvider";
 import { ProductCard } from "./ProductCard";
 
-type ProductGridProps = { products: PreviewProduct[] };
+type ProductGridProps = { products: CatalogProduct[] };
 
 function asPreview(product: CatalogProduct, size: CatalogSize = 15): PreviewProduct {
   return {
@@ -24,7 +24,9 @@ function asPreview(product: CatalogProduct, size: CatalogSize = 15): PreviewProd
 
 export function ProductGrid({ products }: ProductGridProps) {
   const { addToCart } = useCart();
-  const [catalogue, setCatalogue] = useState(products);
+  const [catalogue, setCatalogue] = useState(() =>
+    products.map((product) => asPreview(product)),
+  );
   const [gender, setGender] = useState("All");
   const [scent, setScent] = useState("All");
   const [size, setSize] = useState<CatalogSize>(15);
@@ -50,14 +52,18 @@ export function ProductGrid({ products }: ProductGridProps) {
     .filter(
       (product) =>
         (gender === "All" || product.gender === gender) &&
-        (scent === "All" || product.scent_group === scent),
+        (scent === "All" || product.scent_group === scent) &&
+        product.variants.some((variant) => variant.size_ml === size),
     )
     .map((product) => asPreview(product, size));
 
   const allOutOfStock =
     filtered.length > 0 &&
     filtered.every(
-      (product) => !product.variants.some((variant) => variant.available),
+      (product) =>
+        !product.variants.some(
+          (variant) => variant.size_ml === size && variant.available,
+        ),
     );
 
   const categoryLabel =
@@ -152,14 +158,8 @@ export function ProductGrid({ products }: ProductGridProps) {
         </div>
       ) : (
         <div className="space-y-16">
-          {sizeGuide.map((guide) => {
-            const sizeProducts = filtered
-              .map((product) => asPreview(product, guide.size_ml))
-              .filter((product) =>
-                product.variants.some(
-                  (variant) => variant.size_ml === guide.size_ml,
-                ),
-              );
+          {sizeGuide.filter((guide) => guide.size_ml === size).map((guide) => {
+            const sizeProducts = filtered;
             return (
               <section key={guide.size_ml} aria-labelledby={`size-${guide.size_ml}`}>
                 <div className="mb-6 flex flex-col gap-2 border-b border-[var(--border)] pb-4 sm:flex-row sm:items-end sm:justify-between">

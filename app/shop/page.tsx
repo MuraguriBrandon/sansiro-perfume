@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ShopCatalog } from "@/components/ShopCatalog";
 import { getCatalogue } from "@/lib/catalogue";
@@ -29,9 +30,7 @@ export default async function ShopPage({ searchParams }: ShopPageProps) {
           initialSize={initialSize}
         />
       </main>
-      <footer className="border-t border-[var(--border)] py-10 text-center text-xs uppercase tracking-[0.3em] text-[var(--fg-subtle)]">
-        Sansiro Perfume
-      </footer>
+      <Footer />
     </div>
   );
 }

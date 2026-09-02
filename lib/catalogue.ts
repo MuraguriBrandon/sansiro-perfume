@@ -75,12 +75,14 @@ export function get50mlImage(itemCode: string): {
 export function getCatalogue(): CatalogProduct[] {
   return (catalogueData as Product[]).map((product) => {
     const image50 = get50mlImage(product.item_code);
+    const has15ml = product.variants.some((variant) => variant.size_ml === 15);
+    const variants = has15ml || product.gender === "Unisex"
+      ? product.variants
+      : [...product.variants, { size_ml: 15, price: 500, available: true }];
+
     return {
       ...product,
-      variants: [
-        ...product.variants,
-        { size_ml: 15, price: 500, available: true },
-      ],
+      variants,
       image_8ml: get8mlImage(product.gender),
       image_15ml: get15mlImage(product.gender),
       image_50ml: image50.src,
