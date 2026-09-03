@@ -19,14 +19,20 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:h-18 sm:gap-8 sm:px-8">
         <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Sansiro home">
-          <Image
-            src="/images/logo.png"
-            alt="Sansiro"
-            width={120}
-            height={48}
-            priority
-            className="h-8 w-auto sm:h-9"
-          />
+          <span className="relative block h-8 w-[120px] sm:h-9 sm:w-[120px]">
+            <Image
+              src={
+                theme === "dark"
+                  ? "/images/logo-darkmode.png"
+                  : "/images/logo-lightmode.png"
+              }
+              alt="Sansiro"
+              fill
+              priority
+              sizes="120px"
+              className="object-contain"
+            />
+          </span>
         </Link>
 
         <nav

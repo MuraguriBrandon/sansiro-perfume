@@ -4,9 +4,9 @@ import { Header } from "@/components/Header";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-[var(--bg)] text-[var(--fg)]">
+    <div className="flex flex-col min-h-screen bg-[var(--bg)] text-[var(--fg)]">
       <Header />
-      <main className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-28">
+      <main className="flex-grow mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-28">
         <p className="text-[0.7rem] uppercase tracking-[0.35em] text-[var(--fg-muted)]">About Sansiro</p>
         <div className="mt-6 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-24">
           <h1 className="font-display text-5xl leading-[0.95] sm:text-7xl">Fragrance that stays with you.</h1>
