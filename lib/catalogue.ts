@@ -26,6 +26,7 @@ export {
 } from "@/lib/catalogue-shared";
 
 const IMAGE_DIR = path.join(process.cwd(), "public", "images");
+const DEDICATED_50ML_EXTENSIONS = [".png", ".jpg", ".jpeg", ".webp"];
 
 function listImageFiles(): string[] {
   try {
@@ -60,7 +61,11 @@ export function get50mlImage(itemCode: string): {
   src: string;
   dedicated: boolean;
 } {
-  const dedicated = findImageIgnoreCase(`${itemCode}-50ml.png`);
+  const dedicated = DEDICATED_50ML_EXTENSIONS
+    .map((extension) =>
+      findImageIgnoreCase(`${itemCode}-50ml${extension}`),
+    )
+    .find((image): image is string => image !== null);
   if (dedicated) {
     return { src: dedicated, dedicated: true };
   }
